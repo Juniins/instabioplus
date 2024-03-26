@@ -123,6 +123,31 @@ button {
   padding: 3px;
 }
 
+.pay-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00b743;
+  cursor: pointer;
+  border-radius: 4vmin;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.pay-btn:hover,
+.pay-btn:active {
+  background-color: #00a152 !important;
+}
+
+.pay-btn p {
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.25rem;
+  margin: 0px;
+}
+
 .switch-button {
   background-color: transparent;
   font-size: 12px;
@@ -131,6 +156,7 @@ button {
   outline: none;
   transition: background-color 0.25s ease;
   padding: 8px 0px;
+  color: black;
 }
 
 .switch-button.active {
@@ -140,12 +166,6 @@ button {
 #payment {
   box-shadow: 2px 2px 5px 2px rgba(20, 20, 20, 0.1);
   border-radius: 4vmin;
-}
-
-#payment-button :hover,
-#payment-button :active {
-  background-color: #00a152 !important;
-  cursor: pointer;
 }
 
 /* Slider */
@@ -166,7 +186,8 @@ button {
   transition: transform 0.1s cubic-bezier(0, 0.41, 0, 1.02);
 }
 
-.wrapper i:active {
+.wrapper i:active,
+.wrapper i:hover {
   transform: translateY(-50%) scale(0.8);
   color: red;
 }
@@ -297,7 +318,8 @@ button {
   transition: transform 0.1s cubic-bezier(0, 0.41, 0, 1.02);
 }
 
-.grid i:active {
+.grid i:active,
+.grid i:hover {
   transform: translateY(-50%) scale(0.8);
   color: red;
 }
