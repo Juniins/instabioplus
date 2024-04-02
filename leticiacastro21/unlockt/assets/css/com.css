@@ -151,7 +151,7 @@ button {
   border-radius: 4vmin;
   margin: 0px;
   text-decoration: none;
-  animation: pulse 2s infinite;
+  animation: pulse 2s 1s cubic-bezier(0, 0.52, 0, 1.01) infinite;
 }
 
 .pay-btn:hover,
