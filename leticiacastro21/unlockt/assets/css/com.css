@@ -5,6 +5,25 @@
   font-style: normal;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 1; /* Mantém a opacidade do botão no estado inicial */
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.9; /* Reduz um pouco a opacidade no meio da animação */
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 1; /* Retorna a opacidade do botão ao estado inicial */
+  }
+}
+
+body {
+  background-color: #e5e5fa;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 2px;
@@ -132,11 +151,13 @@ button {
   border-radius: 4vmin;
   margin: 0px;
   text-decoration: none;
+  animation: pulse 2s infinite;
 }
 
 .pay-btn:hover,
 .pay-btn:active {
   background-color: #00a152 !important;
+  animation-play-state: paused;
 }
 
 .pay-btn p {
@@ -190,6 +211,7 @@ button {
 .wrapper i:hover {
   transform: translateY(-50%) scale(0.8);
   color: red;
+  filter: none;
 }
 
 /* .wrapper i:last-child {
@@ -322,6 +344,7 @@ button {
 .grid i:hover {
   transform: translateY(-50%) scale(0.8);
   color: red;
+  filter: none;
 }
 
 .grid .columns {
@@ -412,4 +435,12 @@ button {
     width: 215px; /* Defina a largura desejada para desktops */
     height: 215px; /* Defina a altura desejada para desktops */
   }
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
