@@ -186,6 +186,7 @@
     <center>
       <div id="wrapper" class="wrapper d-none">
         <div class="carousel">
+          
           <div class="vid">
 
             <div class="lock">
@@ -199,6 +200,7 @@
 
             <img src="./assets/images/content/img-1.webp" alt="img" />
           </div>
+        
 
           <div class="vid">
             <div class="lock">
@@ -521,6 +523,26 @@
         document.getElementById("grid").classList.remove("d-none");
       }
     </script>
+
+<script>
+  // Função para adicionar o link aos elementos
+  function addLinkToElements(link) {
+    // Seleciona todos os elementos com a classe 'vid' e 'photo'
+    var elements = document.querySelectorAll('.vid, .photo');
+    
+    // Itera sobre os elementos e adiciona o atributo href com o link fornecido
+    elements.forEach(function(element) {
+      element.addEventListener('click', function() {
+        window.location.href = link;
+      });
+      element.style.cursor = 'pointer';
+    });
+  }
+
+  // Chamada da função com o link desejado
+  addLinkToElements('https://pay.leticiacastrovip.com/PyE2ZyJP1wxGqRb');
+</script>
+
 
     
   </body>
