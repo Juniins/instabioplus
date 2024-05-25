@@ -56,7 +56,7 @@ body {
 
 .buttons {
   position: relative;
-  /* width: 100%; */
+  width: 100%; 
   padding: 16px 66px;
   border-radius: 100px;
   background-color: black;
