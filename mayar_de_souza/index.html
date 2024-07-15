@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayara - Pacote 1</title>
+
+    <!-- CSS -->
+    <link href="./assets/css/com.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Conteúdo do Bootstrap -->
+
+    <div class="sub">
+      <div class="header1">
+        <img
+          src="./assets/images/header.webp"
+          width="100%"
+          style="z-index: -1; margin: 0px !important"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <a>
+        <div class="photo-perfil">
+        <img src="./assets/images/image-perfil.webp" />
+      </div>
+      </a>
+
+      <div style="display: flex; gap: 5px">
+        <h1>Mayara de Souza</h1>
+        <svg
+          viewBox="0 0 18 18"
+          height="18"
+          width="18"
+          preserveAspectRatio="xMidYMid meet"
+          version="1.1"
+          x="0px"
+          y="0px"
+          enable-background="new 0 0 18 18"
+          xml:space="preserve"
+        >
+          <polygon
+            id="Star-2"
+            fill="#00b743"
+            points="9,16 7.1,16.9 5.8,15.2 3.7,15.1 3.4,13 1.5,12 2.2,9.9 1.1,8.2 2.6,6.7 2.4,4.6 4.5,4 5.3,2 7.4,2.4 9,1.1 10.7,2.4 12.7,2 13.6,4 15.6,4.6 15.5,6.7 17,8.2 15.9,9.9 16.5,12 14.7,13 14.3,15.1 12.2,15.2 10.9,16.9 "
+          ></polygon>
+          <polygon
+            id="Check-Icon"
+            fill="#FFFFFF"
+            points="13.1,7.3 12.2,6.5 8.1,10.6 5.9,8.5 5,9.4 8,12.4 "
+          ></polygon>
+        </svg>
+      </div>
+    </div>
+
+    <div class="sub2">
+      <div class="container2">
+        <center>
+          <p style="font-weight: bolder; font-size: 20px; margin-bottom: 0px">
+            Conteúdo Vip Exclusivo 🔞🔥
+          </p>
+          <p style="font-weight: 400; font-family: sans-serif; text-align: left; padding: 12px;">
+            Oii gostoso! 😈🔥, me chamo Mayara, mas pode me chamar de May, esse é o meu pacote vip exclusivo com fotos e vídeos explícitos mostrando tudo e fazendo de tudo e mais um pouco! 🥵 Vem me dar o seu leitinho! 🤤 🔥
+          </p>
+          
+          <p style="font-weight: bold; font-family: sans-serif; text-align: center; padding: 0px 12px;">Só 49,90 pra ter acesso a todo conteúdo desta página 🔥</p>
+        </center>
+
+        <div style="padding: 0px 10px; display: flex; justify-content: center">
+          <div id="presentation-mode-switch" class="buttons">
+            <button
+              id="slider-button"
+              class="switch-button"
+              onclick="toggleSlider()"
+            >
+              <p style="font-weight: bold">Slide</p>
+            </button>
+            <button
+              id="grid-button"
+              class="switch-button active"
+              onclick="toggleGrid()"
+            >
+              <img
+                alt="logo"
+                src="./assets/images/grid-black.svg"
+                style="margin-right: 5px"
+              />
+              <p
+                class="font-finter text-center text-black text-xs"
+                style="font-weight: bold"
+              >
+                Galeria
+              </p>
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="payment"
+          style="
+            display: grid;
+            margin-left: auto;
+            margin-right: auto;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 5vh;
+            width: 95%;
+            max-width: 640px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            z-index: 10;
+            background-color: #f1f1f1;
+            padding: 0.75rem;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              padding-left: 1rem;
+            "
+          >
+            <p
+              style="
+                font-weight: 700;
+                text-align: center;
+                font-size: 1.25rem;
+                color: #000;
+                margin: 0px;
+              "
+            >
+              R$&nbsp;49,90
+            </p>
+            <p
+              style="
+                font-family: 'Inter', sans-serif;
+                text-align: center;
+                color: #6b7280;
+                font-size: 0.875rem;
+                margin: 0px;
+              "
+            >
+              Pagamento seguro
+            </p>
+          </div>
+          
+          <a
+          class="pay-btn pulse"
+            id="payment-button"
+            href="https://seguro.mayarasouzavip.com/r/ARQ9KF377V"
+          >
+          
+          <p><i class="fas fa-key" style="color: #ffffff; margin-right: 2px;"></i>
+              Pagar para revelar
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <center>
+      <div id="wrapper" class="wrapper d-none">
+        <div class="carousel">
+          
+          <div class="vid">
+
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="time">
+              <img src="./assets/images/play.svg" />
+              <p>3:01</p>
+            </div>
+
+            <img src="./assets/images/content/img-1.webp" alt="img" />
+          </div>
+        
+
+          <div class="vid">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="time">
+              <img src="./assets/images/play.svg" />
+              <p>2:03</p>
+            </div>
+
+            <img src="./assets/images/content/img-2.webp" alt="img" />
+          </div>
+
+          <div class="vid">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="time">
+              <img src="./assets/images/play.svg" />
+              <p>1:50</p>
+            </div>
+
+            <img src="./assets/images/content/img-3.webp" alt="img" />
+          </div>
+
+          <div class="vid">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="time">
+              <img src="./assets/images/play.svg" />
+              <p>1:00</p>
+            </div>
+
+            <img src="./assets/images/content/img-4.webp" alt="img" />
+          </div>
+
+          <div class="vid">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="time">
+              <img src="./assets/images/play.svg" />
+              <p>1:50</p>
+            </div>
+
+            <img src="./assets/images/content/img-5.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-6.webp" alt="img" />
+          </div>
+          
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-7.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-8.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-9.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-10.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-11.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-12.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-13.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-14.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-15.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-16.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-17.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-18.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-19.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-20.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-21.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-22.webp" alt="img" />
+          </div>
+
+        </div>
+      </div>
+    </center>
+
+    <!-- GRID -->
+
+    <center>
+      <div id="grid" class="grid">
+        <div class="columns">
+          <div class="vid">
+
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="time">
+              <img src="./assets/images/play.svg" />
+              <p>3:01</p>
+            </div>
+
+            <img src="./assets/images/content/img-1.webp" alt="img" />
+          </div>
+
+          <div class="vid">
+
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="time">
+              <img src="./assets/images/play.svg" />
+              <p>2:03</p>
+            </div>
+
+            <img src="./assets/images/content/img-2.webp" alt="img" />
+          </div>
+
+          <div class="vid">
+
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="time">
+              <img src="./assets/images/play.svg" />
+              <p>1:50</p>
+            </div>
+
+            <img src="./assets/images/content/img-3.webp" alt="img" />
+          </div>
+
+          <div class="vid">
+
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="time">
+              <img src="./assets/images/play.svg" />
+              <p>1:00</p>
+            </div>
+
+            <img src="./assets/images/content/img-4.webp" alt="img" />
+          </div>
+
+          <div class="vid">
+
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="time">
+              <img src="./assets/images/play.svg" />
+              <p>1:50</p>
+            </div>
+
+            <img src="./assets/images/content/img-5.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-6.webp" alt="img" />
+          </div>
+          
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-7.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-8.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-9.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-10.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-11.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-12.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-13.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-14.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-15.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-16.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-17.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-18.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-19.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-20.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-21.webp" alt="img" />
+          </div>
+
+          <div class="photo">
+            <div class="lock">
+              <i class="fas fa-lock"></i>
+            </div>
+            <img src="./assets/images/content/img-22.webp" alt="img" />
+          </div>
+      </div>
+    </center>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- jQuery e Popper.js (necessários para o Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS -->
+    <script>
+      function toggleSlider() {
+        // Adiciona a classe 'active' ao botão do slider e remove do botão da galeria.
+        document.getElementById("slider-button").classList.add("active");
+        document.getElementById("grid-button").classList.remove("active");
+
+        // Remove a classe 'd-none' do elemento com ID 'wrapper', tornando-o visível.
+        document.getElementById("wrapper").classList.remove("d-none");
+        document.getElementById("grid").classList.add("d-none");
+      }
+
+      function toggleGrid() {
+        // Remove a classe 'active' do botão do slider e adiciona ao botão da galeria.
+        document.getElementById("slider-button").classList.remove("active");
+        document.getElementById("grid-button").classList.add("active");
+
+        // Adiciona a classe 'd-none' ao elemento com ID 'wrapper', ocultando-o.
+        document.getElementById("wrapper").classList.add("d-none");
+        document.getElementById("grid").classList.remove("d-none");
+      }
+    </script>
+
+<script>
+  // Função para adicionar o link aos elementos
+  function addLinkToElements(link) {
+    // Seleciona todos os elementos com a classe 'vid' e 'photo'
+    var elements = document.querySelectorAll('.vid, .photo');
+    
+    // Itera sobre os elementos e adiciona o atributo href com o link fornecido
+    elements.forEach(function(element) {
+      element.addEventListener('click', function() {
+        window.location.href = link;
+      });
+      element.style.cursor = 'pointer';
+    });
+  }
+
+  // Chamada da função com o link desejado
+  addLinkToElements('https://seguro.mayarasouzavip.com/r/ARQ9KF377V');
+</script>
+
+
+    
+  </body>
+</html>
