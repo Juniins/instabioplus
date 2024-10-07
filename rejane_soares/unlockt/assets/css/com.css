@@ -1,0 +1,446 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-ExtraBold.ttf") format(opentype);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 1; /* Mantém a opacidade do botão no estado inicial */
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.9; /* Reduz um pouco a opacidade no meio da animação */
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 1; /* Retorna a opacidade do botão ao estado inicial */
+  }
+}
+
+body {
+  background-color: #e5e5fa;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.header1 {
+  position: absolute;
+  max-width: 800px;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+.header1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 50%;
+}
+
+.sub {
+  display: flex;
+  justify-content: center;
+}
+
+.sub2 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 680px !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 100px 16px 35px 16px;
+  gap: 10px;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .photo-perfil {
+  width: 80px;
+  height: 80px;
+  /* transform: rotate(70deg); */
+  border-radius: 100%;
+  background-color: black;
+  overflow: hidden;
+  margin-bottom: 5px;
+  box-shadow: 2px 2px 5px 2px rgba(20, 20, 20, 0.14);
+  border: solid 3px white;
+}
+
+.container h1 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.container p {
+  text-align: center;
+}
+
+.container2 {
+  width: 100%;
+  max-width: 700px;
+}
+
+.container2 p {
+  font-family: "Montserrat";
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons {
+  max-width: 800px;
+  position: relative;
+  width: 100%;
+  padding: 0.125rem;
+  border-radius: 15px;
+  background-color: rgb(218, 218, 218);
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+}
+
+button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  background-color: #f3f3f3;
+}
+
+.buttons p {
+  margin: 0px;
+  font-weight: 500;
+  padding: 3px;
+}
+
+.pay-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00b743;
+  cursor: pointer;
+  border-radius: 4vmin;
+  margin: 0px;
+  text-decoration: none;
+  animation: pulse 2s 1s cubic-bezier(0, 0.52, 0, 1.01) infinite;
+}
+
+.pay-btn:hover,
+.pay-btn:active {
+  background-color: #00a152 !important;
+  animation-play-state: paused;
+}
+
+.pay-btn p {
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.25rem;
+  margin: 0px;
+}
+
+.switch-button {
+  background-color: transparent;
+  font-size: 12px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  transition: background-color 0.25s ease;
+  padding: 8px 0px;
+  color: black;
+}
+
+.switch-button.active {
+  background-color: white;
+}
+
+#payment {
+  box-shadow: 2px 2px 5px 2px rgba(20, 20, 20, 0.1);
+  border-radius: 4vmin;
+}
+
+/* Slider */
+.wrapper {
+  display: flex;
+  max-width: 800px;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.wrapper i {
+  color: white;
+  font-size: 5.5rem;
+  text-align: center;
+  line-height: 0px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
+  transition: transform 0.1s cubic-bezier(0, 0.41, 0, 1.02);
+}
+
+.wrapper i:active,
+.wrapper i:hover {
+  transform: translateY(-50%) scale(0.8);
+  color: red;
+  filter: none;
+}
+
+/* .wrapper i:last-child {
+  right: -22px;
+} */
+
+.wrapper .carousel {
+  display: flex;
+  white-space: nowrap;
+  font-size: 0px;
+  cursor: pointer;
+  overflow: auto;
+  scrollbar-color: red;
+  scroll-behavior: smooth;
+  /* padding-left: 50px; */
+  padding-right: 50px;
+  height: 300px;
+}
+
+/* .carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img {
+  pointer-events: none;
+} */
+
+.carousel img {
+  height: 262.667px;
+  width: 262.667px;
+  border-radius: 10px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 30px;
+  box-shadow: 2px 2px 5px 2px rgba(20, 20, 20, 0.14);
+}
+
+.carousel img:first-child {
+  /* margin-left: 0px; */
+}
+
+.vid {
+  position: relative;
+}
+
+.vid .time {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+
+.vid .time p {
+  font-size: 16px;
+  margin: 0px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.6));
+}
+
+.time img {
+  width: auto;
+  height: 1.7rem;
+  margin: 0px 6px 0px 0px;
+  box-shadow: none;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.6));
+}
+
+.wrapper .photo .lock,
+.wrapper .vid .lock {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columns .photo .lock,
+.columns .vid .lock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo .lock img,
+.vid .lock img {
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
+  width: 60%;
+  height: auto;
+  box-shadow: none;
+}
+
+.photo {
+  position: relative;
+}
+
+/* Grid */
+.grid {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.grid i {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 0px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
+  transition: transform 0.1s cubic-bezier(0, 0.41, 0, 1.02);
+}
+
+.grid i:active,
+.grid i:hover {
+  transform: translateY(-50%) scale(0.8);
+  color: red;
+  filter: none;
+}
+
+.grid .columns {
+  display: grid; /* Alterado de flex para grid */
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Definindo duas colunas com largura igual */
+  gap: 10px; /* Espaçamento entre os elementos */
+  font-size: 0px;
+  cursor: pointer;
+  overflow: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  height: 100%;
+}
+
+/* .grid .columns > * {
+  margin-bottom: 30px;
+} */
+
+.columns img {
+  height: 100%;
+  width: 100%;
+  max-width: 265px;
+  max-height: 265px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 2px 2px 5px 2px rgba(20, 20, 20, 0.14);
+}
+
+.columns img:first-child {
+}
+
+.columns .vid,
+.columns .photo {
+  width: 170px;
+  height: 170px;
+}
+
+.vid {
+  position: relative;
+}
+
+.vid .time {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+
+.vid .time p {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.time img {
+  width: 100%;
+  height: 1.7rem;
+  margin: 0px 3px 0px 0px;
+  box-shadow: none;
+}
+
+/* Para telas maiores que 768px (desktops) */
+@media (min-width: 550px) {
+  .grid .columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Para telas maiores que 768px (desktops) */
+@media (min-width: 700px) {
+  .grid .columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .columns .vid,
+  .columns .photo {
+    width: 215px; /* Defina a largura desejada para desktops */
+    height: 215px; /* Defina a altura desejada para desktops */
+  }
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
