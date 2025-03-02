@@ -1,0 +1,99 @@
+body {
+  background-color: black !important;
+}
+
+.container {
+  max-width: 680px !important;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 16px !important;
+  gap: 10px;
+}
+
+.container img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border: 5px solid #00b118c7;
+}
+
+.container h1 {
+  color: white;
+  font-size: 20px;
+}
+
+.container p {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.layer_buttons {
+  gap: 15px;
+  width: 100%;
+  max-width: 500px !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layer_buttons img {
+  border: solid 1.6px black;
+  box-shadow: none;
+  /* border-radius: 100%; */
+  width: 40px;
+  margin: 0px;
+}
+
+.buttons {
+  position: relative;
+  width: 100%;
+  padding: 16px 66px;
+  border-radius: 100px;
+  background-color: black;
+  /* color: black; */
+  text-decoration: none;
+  /* overflow-wrap: break-word; */
+  text-align: center;
+  border: solid 1.5px red;
+}
+
+.buttons:active,
+.buttons:hover {
+  background-color: rgb(203, 0, 0);
+  color: white;
+  border-color: transparent;
+  /* border: solid 1.5px rgb(255, 255, 255); */
+}
+
+.buttons p {
+  /* color: red; */
+  font-weight: bold;
+  margin: 0px;
+}
+
+.icons-btn {
+  /* background-color: white; */
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 100%;
+  left: 6px;
+}
