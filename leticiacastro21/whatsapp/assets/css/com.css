@@ -1,16 +1,26 @@
 body {
-  background-color: black !important;
+  font-family: "Arial", sans-serif;
+  background-image: url("./assets/images/bgwhats.png") !important; /* Adicionei url() */
+  background-color: #fffafa;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
 }
 
+/* Caixa de Aviso */
 .container {
-  max-width: 680px !important;
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 16px !important;
-  gap: 10px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 4px 11px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
 }
 
 .container img {
@@ -22,78 +32,33 @@ body {
   border: 5px solid #00b118c7;
 }
 
-.container h1 {
-  color: white;
-  font-size: 20px;
+/* Estilos do Texto */
+h1 {
+  color: #000000;
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 35px;
 }
 
-.container p {
+p {
+  color: #303030;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Botão Voltar Mais Tarde */
+.btn {
+  background-color: #00b118c7;
+  color: white;
+  padding: 18px 25px;
+  border: none;
+  border-radius: 17px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s;
   font-weight: bold;
-  color: white;
-  text-align: center;
 }
 
-.icons {
-  display: flex;
-  gap: 20px;
-}
-
-.layer_buttons {
-  gap: 15px;
-  width: 100%;
-  max-width: 500px !important;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.layer_buttons img {
-  border: solid 1.6px black;
-  box-shadow: none;
-  /* border-radius: 100%; */
-  width: 40px;
-  margin: 0px;
-}
-
-.buttons {
-  position: relative;
-  width: 100%;
-  padding: 16px 66px;
-  border-radius: 100px;
-  background-color: black;
-  /* color: black; */
-  text-decoration: none;
-  /* overflow-wrap: break-word; */
-  text-align: center;
-  border: solid 1.5px red;
-}
-
-.buttons:active,
-.buttons:hover {
-  background-color: rgb(203, 0, 0);
-  color: white;
-  border-color: transparent;
-  /* border: solid 1.5px rgb(255, 255, 255); */
-}
-
-.buttons p {
-  /* color: red; */
-  font-weight: bold;
-  margin: 0px;
-}
-
-.icons-btn {
-  /* background-color: white; */
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  border-radius: 100%;
-  left: 6px;
+.btn:hover {
+  background-color: #00a115c7;
 }
