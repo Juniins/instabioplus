@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whatsapp Letícia</title>
+    <script>
+      // Lista de links para redirecionamento
+      const links = [
+        "https://wa.me/5577920021279?text=Oii%20R%C3%AA%2C%20tenho%20interesse%20em%20comprar%20seus%20conte%C3%BAdos%2C%20pode%20me%20enviar%20a%20tabela%20de%20pre%C3%A7os%3F",
+        "https://wa.me/5531933019491?text=Oii%20R%C3%AA%2C%20tenho%20interesse%20em%20comprar%20seus%20conte%C3%BAdos%2C%20pode%20me%20enviar%20a%20tabela%20de%20pre%C3%A7os%3F",
+        "https://wa.me/5522920078468?text=Oii%20R%C3%AA%2C%20tenho%20interesse%20em%20comprar%20seus%20conte%C3%BAdos%2C%20pode%20me%20enviar%20a%20tabela%20de%20pre%C3%A7os%3F",
+        "https://wa.me/5521972602361?text=Oii%20R%C3%AA%2C%20tenho%20interesse%20em%20comprar%20seus%20conte%C3%BAdos%2C%20pode%20me%20enviar%20a%20tabela%20de%20pre%C3%A7os%3F",
+      ];
+
+      // Função que escolhe um link aleatório da lista
+      function redirecionarAleatorio() {
+        const linkAleatorio = links[Math.floor(Math.random() * links.length)];
+        window.location.href = linkAleatorio;
+      }
+
+      // Redireciona assim que a página carregar
+      window.onload = redirecionarAleatorio;
+    </script>
+  </head>
+  <body></body>
+</html>
